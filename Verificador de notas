@@ -1,0 +1,13 @@
+nota = float(input("Digite a nota:\n")) #recebe a nota do usuário
+
+while (nota<0) or (nota>10):#verifica se a nota é inválida
+    print("Nota inválida")
+    nota = float(input("Digite uma nota válida:\n"))#recebe outra nota
+
+
+if nota > 6: #verifica se o usuário passou (nota > 6)
+    print("Parabéns, você passou")
+elif nota >=4: #verifica se o usuário faz a recuperação(6 > nota >= 4)
+    print("Você está de recuperação")
+else: #verifica se o usuário reprovou(nota < 4)
+    print("Você reprovou direto")
