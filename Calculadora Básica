@@ -1,0 +1,20 @@
+valor1 = float(input("Qual o primeiro valor?\n"))
+operacao = input("Digite X para multiplicação, / para divisão, + para soma e - para subtração\n")
+valor2 = float(input("Qual o segundo valor\n"))
+
+if operacao == "/":
+    print("Operação escolhida: Divisão")
+    resultado = valor1 / valor2
+elif operacao == "X" or operacao == "x":
+    print("Operação escolhida: Multiplicação")
+    resultado = valor1 * valor2
+elif operacao == "+":
+    print("Operação escolhida: Adição")
+    resultado = valor1 + valor2
+elif operacao == "-":
+    print("Operação escolhida: Subtração")
+    resultado = valor1 - valor2
+else:
+    print("Valor de operação inválido")
+
+print("O resultado da operação é de: " + str(resultado))
